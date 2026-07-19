@@ -1,0 +1,21 @@
+Table,Column,Data Type,Description,Example Value
+customers,customer_id,String,Unique customer identifier for each order,abc123
+customers,customer_unique_id,String,Unique customer identifier,861eff4711a542e4b93843c6dd7febb0
+customers,customer_zip_code_prefix,Integer,Customer ZIP code prefix,14409
+customers,customer_city,String,Customer city,franca
+customers,customer_state,String,Customer state,SP
+orders,order_id,String,Unique order identifier,xyz789
+orders,customer_id,String,Customer who placed the order,abc123
+orders,order_status,String,Current status of the order,delivered
+orders,order_purchase_timestamp,Datetime,Order purchase date and time,2017-10-02 10:56:33
+orders,order_approved_at,Datetime,Order approval date and time,2017-10-02 11:07:15
+orders,order_delivered_carrier_date,Datetime,Date when order was handed to the carrier,2017-10-04 19:55:00
+orders,order_delivered_customer_date,Datetime,Date when order was delivered to the customer,2017-10-10 21:25:13
+orders,order_estimated_delivery_date,Datetime,Estimated delivery date,2017-10-18
+order_items,order_id,String,Order identifier,xyz789
+order_items,order_item_id,Integer,Item number within the order,1
+order_items,product_id,String,Purchased product identifier,prod123
+order_items,seller_id,String,Seller identifier,seller567
+order_items,shipping_limit_date,Datetime,Last date for shipping the product,2017-09-19 09:45:35
+order_items,price,Float,Price of the product,58.90
+order_items,freight_value,Float,Shipping cost,13.29
